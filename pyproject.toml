@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "papertype"
+version = "0.1.0"
+description = "Official Python SDK and CLI for the PaperType PDF API (Markdown or HTML to PDF)."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "PaperType" }]
+keywords = ["pdf", "markdown", "html", "api", "papertype"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = ["httpx>=0.23"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://papertype.dev"
+Repository = "https://github.com/papertype-dev/papertype-python"
+Documentation = "https://papertype.dev/docs"
+Documentation = "https://papertype.dev/docs"
+
+[project.scripts]
+papertype = "papertype.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
