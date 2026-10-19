@@ -15,7 +15,7 @@ Requires Python 3.9 or newer. The only dependency is `httpx`.
 
 ## Authentication
 
-Get an API key at https://papertype.dev/signup (keys start with `dp_`). The SDK and
+Get an API key at https://papertype.dev/signup?ref=pypi (keys start with `dp_`). The SDK and
 CLI read it from the `PAPERTYPE_API_KEY` environment variable, or you can pass it
 explicitly:
 

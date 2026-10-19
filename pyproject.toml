@@ -29,7 +29,6 @@ test = ["pytest"]
 Homepage = "https://papertype.dev"
 Repository = "https://github.com/papertype-dev/papertype-python"
 Documentation = "https://papertype.dev/docs"
-Documentation = "https://papertype.dev/docs"
 
 [project.scripts]
 papertype = "papertype.cli:main"
